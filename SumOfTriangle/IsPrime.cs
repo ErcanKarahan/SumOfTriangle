@@ -12,8 +12,10 @@ namespace SumOfTriangle
       public  static bool IsPrimes(int number)
         {
             // Test whether the parameter is a prime number.
+          // Number mod 1 eşitse 0 a
             if ((number & 1) == 0)
             {
+                //number eşitse 2 ye
                 if (number == 2)
                 {
                     return true;
