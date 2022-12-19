@@ -13,15 +13,15 @@ namespace SumOfTriangle
         {
             int[,] tableHolder = new int[arrayOfRowsByNewlines.Length, arrayOfRowsByNewlines.Length + 1];
 
-            for (int row = 0; row < arrayOfRowsByNewlines.Length; row++)
+            for (int row = 0; row < arrayOfRowsByNewlines.Length; row++)//Gelen datada donuyoruz
             {
-                var eachCharactersInRow = arrayOfRowsByNewlines[row].Trim().Split(' ');
+                var eachCharactersInRow = arrayOfRowsByNewlines[row].Trim().Split(' ');//gelen datayı split ediyoruz
 
                 for (int column = 0; column < eachCharactersInRow.Length; column++)
-                {
+                { //spilit ettigimiz datayı donuyoruz
                     int number;
-                    int.TryParse(eachCharactersInRow[column], out number);
-                    tableHolder[row, column] = number;
+                    int.TryParse(eachCharactersInRow[column], out number);// tipini inte parse edip outla fırlatıyoruz numberi 
+                    tableHolder[row, column] = number;// number i tableholder a esitliyoruz
                 }
             }
             return tableHolder;
