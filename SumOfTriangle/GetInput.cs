@@ -8,7 +8,7 @@ namespace SumOfTriangle
 {
     public class GetInput
     {
-         
+         // valueların alındıgı yer ister parametre olarak gonder ister parametresiz valuelar assagıdaki gibi dolsun
         public static string GetInputValue(string value="")
         {
             if (String.IsNullOrEmpty(value))
